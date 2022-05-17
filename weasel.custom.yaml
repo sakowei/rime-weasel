@@ -1,0 +1,15 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue May 17 13:01:32 2022"
+  rime_version: 1.5.3
+patch:
+  style:
+    color_shceme: onedark
+    display_tray_icon: false
+    font_face: "宋体"
+    font_point: 10
+    horizontal: true
+    layout: {border: 1, margin_x: 10, margin_y: 10, round_corner: 2, spacing: 16}
+  "style/color_scheme": onedark

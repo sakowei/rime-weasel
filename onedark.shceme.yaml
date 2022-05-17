@@ -1,0 +1,12 @@
+onedark:
+  name: 一黑／One Dark
+  author: 沢原浩輔、mskelton(colorize)
+  back_color: 0x342C28
+  border_color: 0xBFB2AB
+  text_color: 0xEFAF61
+  hilited_text_color: 0x79C398
+  hilited_back_color: 0x342C28
+  hilited_candidate_text_color: 0x7BC0E5
+  hilited_candidate_back_color: 0x594840
+  candidate_text_color: 0xBFB2AB
+  comment_text_color: 0x8E847F
