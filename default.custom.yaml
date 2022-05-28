@@ -1,18 +1,20 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.14.3
+  generator: "Rime::SwitcherSettings"
+  modified_time: "Sat May 28 18:10:07 2022"
+  rime_version: 1.5.3
 patch:
-  "menu/page_size": 6 # 候选词个数
   ascii_composer:
-    good_old_caps_lock: true # 还原 CapsLock 大小写
-    switch_key:
-      Caps_Lock: noop
-      Shift_L: commit_code # Shift键切换中英文
-      Shift_R: commit_code
-  # 输入方案
+    good_old_caps_lock: true
+    switch_key: {Caps_Lock: noop, Shift_L: commit_code, Shift_R: commit_code}
+  key_binder:
+    bindings: [{accept: ISO_Left_Tab, send: Page_Up, when: composing}, {accept: "Shift+Tab", send: Page_Up, when: composing}, {accept: Tab, send: Page_Down, when: composing}, {accept: minus, send: Page_Up, when: has_menu}, {accept: equal, send: Page_Down, when: has_menu}, {accept: comma, send: Page_Up, when: paging}, {accept: period, send: Page_Down, when: has_menu}, {accept: bracketleft, send: Page_Up, when: paging}, {accept: bracketright, send: Page_Down, when: has_menu}]
+  "menu/page_size": 6
   schema_list:
     - {schema: double_pinyin}
     - {schema: zrm2000}
+    - {schema: "nihongo-r"}
     - {schema: symbols}
-  # 方案选单热键
   "switcher/hotkeys":
-    - Shift+F4
-  key_binder:
-    bindings: [{accept: ISO_Left_Tab, send: Page_Up, when: composing}, {accept: "Shift+Tab", send: Page_Up, when: composing}, {accept: Tab, send: Page_Down, when: composing}, {accept: minus, send: Page_Up, when: has_menu}, {accept: equal, send: Page_Down, when: has_menu}, {accept: comma, send: Page_Up, when: paging}, {accept: period, send: Page_Down, when: has_menu}, {accept: bracketleft, send: Page_Up, when: paging}, {accept: bracketright, send: Page_Down, when: has_menu}]
+    - "Shift+F4"
