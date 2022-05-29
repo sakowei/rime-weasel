@@ -39,7 +39,6 @@ engine:
     - r10n_translator
     - reverse_lookup_translator
   filters:
-    - simplifier
     - uniquifier
 
 speller:
